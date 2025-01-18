@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="event.preventDefault(); checkUser();">
+      <div>
+        <label for="loginUsername" class="form-label"></label>
+        <input type="text" placeholder="Username" id="loginUsername" required>
+      </div>
+      <div>
+        <label for="loginPassword" class="form-label"></label>
+        <input type="password" placeholder="Password" id="loginPassword" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+</body>
+</html>
